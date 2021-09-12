@@ -20,10 +20,17 @@
                     <label for="gender" class="form-label">Gender</label><br>
                     <table>
                         <tr>
+                            @if($patient->gender==='male')
                             <td><input type="radio" id="male" name="gender" value="{{$patient->gender}}"></td>
                             <td><label for="male">Male</label></td>
                             <td><input type="radio" id="female" name="gender" value="{{$patient->gender}}" style="margin-left: 50px;"></td>
                             <td><label for="female">Female</label></td>
+                            @elseif($patient->gender==='female')
+                            <td><input type="radio" id="male" name="gender" value="male"></td>
+                            <td><label for="male">Male</label></td>
+                            <td><input type="radio" id="female" name="gender" value="female" style="margin-left: 50px;" checked></td>
+                            <td><label for="female">Female</label></td>
+                            @endif
                         </tr>
                     </table>
                 </div>
