@@ -35,7 +35,7 @@
                     <input type="text" class="form-control" id="address" name="address">
                 </div>
                 <div class="form-group">
-                    <label for="phoenNo" class="form-label">Phone Number</label>
+                    <label for="phoneNo" class="form-label">Phone Number</label>
                     <input type="text" class="form-control" id="phoneNo" name="phoneNo">
                 </div>
                 <button type="submit" class="btn btn-primary mb-3" style="margin-left: 46%;">Submit</button>
